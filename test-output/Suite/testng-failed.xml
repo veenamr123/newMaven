@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.genericUtility.ListenerImplenClass"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Test(failed)">
+    <parameter name="BROWSER" value="firefox"/>
+    <classes>
+      <class name="admin.ManageProductsTest">
+        <methods>
+          <include name="config_bm"/>
+          <include name="config_as"/>
+          <include name="config_ac"/>
+          <include name="config_am"/>
+          <include name="config_bs"/>
+          <include name="config_bc"/>
+          <include name="manageProductsTest"/>
+        </methods>
+      </class> <!-- admin.ManageProductsTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
